@@ -1,0 +1,48 @@
+<h1>Tamagotchi</h1>
+
+<ul>
+  <% @actives.each do |active| %>
+  <li><div class="">
+    <label for="">Name:</label>
+    <h3><%= active.name %></h3>
+  </div></li>
+  <li><div class="">
+    <label for="">Food:</label>
+    <h3><%= active.food %></h3>
+  </div></li>
+  <li><div class="">
+    <label for="">Sleep:</label>
+    <h3><%= active.sleep_level %></h3>
+  </div></li>
+  <li><h3>--------------</h3></li>
+  <% end %>
+</ul>
+
+<form action="/new" method="post">
+  <div class="">
+    <label for="description">Create new Tamagotchi</label>
+    <input type="text" id="new" name="new">
+  </div>
+  <button type="submit" name="send" id="send">Create</button>
+</form>
+
+<form action="/eat" method="post">
+  <div class="">
+    <label for="description">Eat</label>
+  </div>
+  <button type="submit" name="send" id="send">Eat</button>
+</form>
+
+<form action="/sleep" method="post">
+  <div class="">
+    <label for="description">Sleep</label>
+  </div>
+  <button type="submit" name="send" id="send">Sleep</button>
+</form>
+
+<form action="/play" method="post">
+  <div class="">
+    <label for="description">Play</label>
+  </div>
+  <button type="submit" name="send" id="send">Play</button>
+</form>
