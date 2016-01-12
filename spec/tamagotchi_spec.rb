@@ -23,4 +23,14 @@ describe(Tamagotchi) do
       expect(my_tamagotchi.alive?).to(eq(false))
     end
   end
+  describe("#time_passes") do
+    it('subtract one from food and sleep during time passes') do
+      my_tamagotchi = Tamagotchi.new("thing")
+      expect(my_tamagotchi.food).to(eq(100))
+      expect(my_tamagotchi.sleep_level).to(eq(100))
+      my_tamagotchi.time_passes
+      expect(my_tamagotchi.food).to(eq(99))
+      expect(my_tamagotchi.sleep_level).to(eq(99))
+    end
+  end
 end

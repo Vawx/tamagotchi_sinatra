@@ -25,4 +25,9 @@ class Tamagotchi
   define_method(:alive?) do
     return @food_level > 0
   end
+
+  define_method(:time_passes) do
+    @food_level -= 1
+    @sleep_level -= 1
+  end
 end
