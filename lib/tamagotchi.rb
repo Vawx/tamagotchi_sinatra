@@ -10,6 +10,10 @@ class Tamagotchi
     return @name
   end
 
+  define_method(:set_food_level) do |set|
+    @food_level = set
+  end
+
   define_method(:food) do
     return @food_level
   end
