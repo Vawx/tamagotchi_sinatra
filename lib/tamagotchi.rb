@@ -17,4 +17,8 @@ class Tamagotchi
   define_method(:sleep_level) do
     return @sleep_level
   end
+
+  define_method(:alive?) do
+    return @food_level > 0
+  end
 end

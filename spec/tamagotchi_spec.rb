@@ -10,4 +10,10 @@ describe(Tamagotchi) do
       expect(my_tamagotchi.sleep_level).to(eq(100))
     end
   end
+  describe("#alive") do
+    it('checks if tamagotchi is alive') do
+      my_tamagotchi = Tamagotchi.new("thing")
+      expect(my_tamagotchi.alive?).to(eq(true))
+    end
+  end
 end
