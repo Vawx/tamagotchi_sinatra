@@ -1,0 +1,20 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+  Thorough commits, but no readme yet.
+Is there good spec coverage (unit and integration)?
+  Yes (no integration specs but that's ok)
+Do all specs pass?
+  All but 'time passes' method
+Is the application logic clear and easy to navigate?
+  Yes
+Are custom classes and methods created?
+  Yes
+Is an instance of one class used in another?
+  N/A
+Are GET and POST requests processed successfully?
+  Yes
+Is the site user-friendly?
+  Yes
+Are there opportunities for refactoring?
+  Not really
+Do you have any additional constructive criticism or positive feedback to share?
+  No way for it to die. It is immortal. Otherwise looks great.
